@@ -16,7 +16,7 @@
 <h3>neccessary python libraries</h3>
  refer to [ requirements ] file <br>
  ㄴ requirements file lists all the depending libraries<br>
- ㄴ command to install all the libraries at once :  pip install -r requirements   <br>
+ ㄴ command for installing all the libraries at once :  pip install -r requirements   <br>
 
 <h3>how to execute this app</h3>
    download all the folders under [ project ] folder<br>
