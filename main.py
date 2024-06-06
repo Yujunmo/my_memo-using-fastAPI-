@@ -7,7 +7,7 @@ from api.common import templates
 from database.orm import app_lifespan
 
 app = FastAPI(lifespan=app_lifespan, docs_url=None, redoc_url=None)
-app.add_middleware(SessionMiddleware,secret_key="blacksky118")
+app.add_middleware(SessionMiddleware,secret_key="your_key")
 app.include_router(login_router)
 app.include_router(memo_router)
 
