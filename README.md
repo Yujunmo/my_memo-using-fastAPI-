@@ -16,9 +16,8 @@ simple memo application<br>
 <h3>database</h3>
  ㄴ mysql==8.0.36
 <img src="https://github.com/Yujunmo/my_memo-using-fastAPI-/assets/45279586/765fb091-7c9e-431e-8dfc-1befb60e1c37">
- ㄴ database/connection.py
- ㄴ you need to adjust this code to your server environment *
-
+ ㄴ database/connection.py <br>
+ ㄴ *you need to adjust this code to your server environment <br>
 
 <h3>os</h3>
  ㄴ independent ( linux / window / mac ...etc ) 
