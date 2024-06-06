@@ -42,6 +42,8 @@ simple memo application<br>
 											</ul>
        
 change directory to [ project ] and execute following command<br>
+  ㄴ execute your mysql database and adjust connecting code <br>
+  ㄴ pip install -r requiremnets <br>
   ㄴ uvicorn main:app --reload<br>
 
 applicaiton will be connected to 8000 port of your server<br>
