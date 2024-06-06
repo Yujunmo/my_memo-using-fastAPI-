@@ -1,32 +1,37 @@
-[ develop environment ]
+<h1>[ develop environment ]</h1>
 
-backend 
- ㄴ language : python==3.10.12
- ㄴ framework : fastAPI==0.104.1, uvicorn==0.27.0.=post1
-front 
+<h3>backend</h3> 
+ ㄴ language : python==3.10.12<br>
+ ㄴ framework : fastAPI==0.104.1, uvicorn==0.27.0.=post1<br>
+	
+<h3>front</h3> 
  ㄴ template : Jinja2==3.1.3
 
-database :
+<h3>database</h3>
  ㄴ mysql==8.0.36
 
-os : independent ( linux / window / mac ...etc ) 
+<h3>os</h3>
+ ㄴ independent ( linux / window / mac ...etc ) 
 
-neccessary python libraries : refer to [ requirements ] file 
- ㄴ requirements file lists all the depending libraries
- ㄴ command to install all the libraries at once :  pip install -r requirements   
+<h3>neccessary python libraries</h3>
+ refer to [ requirements ] file <br>
+ ㄴ requirements file lists all the depending libraries<br>
+ ㄴ command to install all the libraries at once :  pip install -r requirements   <br>
 
-how to execute this app :
-   download all the folders under [ project ] folder
-   directory tree will be like this ...
-        0.project
-           1. api [d]
-           1. database [d]
-           1. common_function [d]
-           1. schema [d]
-           1. templates [d]
-           1. main.py [f]
+<h3>how to execute this app</h3>
+   download all the folders under [ project ] folder<br>
+   directory tree will be like this ...<br>
+        project<br>
+								   <ul>
+							    <li> api [d]</li>
+           <li> database [d]</li>
+           <li> common_function [d]</li>
+           <li> schema [d]</li>
+           <li> templates [d]</li>
+           <li> main.py [f]</li>												
+											</ul>
+       
+change directory to [ project ] and execute following command<br>
+  ㄴ uvicorn main:app --reload<br>
 
-change directory to [ project ] and execute following command
-  ㄴ uvicorn main:app --reload
-
-applicaiton will be connected to 8000 port of your server
+applicaiton will be connected to 8000 port of your server<br>
