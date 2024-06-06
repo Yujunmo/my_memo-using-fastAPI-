@@ -74,9 +74,6 @@ async def update_memos(request:Request, memo_id:int, memo:RequestSchema_UpdateMe
     if not db_user:
         raise HTTPException(status_code=404, detail="no  ID data found")
     
-    print("user_id :",db_user.id)
-    print("memo_id :",memo_id)
-
     result = await session.execute(select(Memo).where(Memo.user_id == db_user.id), Memo.id == memo_id)
     db_memo = result.scalars().first()
 
@@ -103,7 +100,6 @@ async def delete_memos(request:Request, memo_id:int,session:AsyncSession=Depends
     result = await session.execute(select(User).where(User.username == username))
     db_user = result.scalars().first()
 
-    print(f"user info : {db_user.id}, {db_user.username}")
     if not db_user:
         raise HTTPException(status_code=404, detail="no ID data found")
 
@@ -111,7 +107,6 @@ async def delete_memos(request:Request, memo_id:int,session:AsyncSession=Depends
     db_memo = result.scalars().first()
     
     if not db_memo:
-        print("XXXXXXXXXXXXXXXXX")
         raise HTTPException(status_code=404, detail="no Memo data found")
     
     await session.delete(db_memo)
