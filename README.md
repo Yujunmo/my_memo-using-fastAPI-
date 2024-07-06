@@ -32,15 +32,15 @@ simple memo application<br>
   ㄴ download all the folders under [ project ] folder<br>
    directory tree will be like this ...<br>
         project<br>
-								   <ul>
-							    <li> api [d]</li>
+<ul>
+	   <li> api [d]</li>
            <li> database [d]</li>
            <li> common_function [d]</li>
            <li> schema [d]</li>
            <li> templates [d]</li>
            <li> main.py [f]</li>												
-											</ul>
-  ㄴ execute your mysql database 
+</ul>
+  ㄴ execute your mysql database  <br>
   ㄴ adjust database/connect.py code <br>
   ㄴ pip install -r requiremnets <br>
   ㄴ uvicorn main:app --reload<br>
