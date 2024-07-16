@@ -17,7 +17,7 @@ simple memo application<br>
 <img src="https://github.com/Yujunmo/my_memo-using-fastAPI-/assets/45279586/765fb091-7c9e-431e-8dfc-1befb60e1c37">
 <br>
  ㄴ mysql==8.0.36 <br>
- ㄴ orm lib : sqlalchemy
+ ㄴ orm lib : sqlalchemy <br>
  ㄴ database/connection.py <br>
  ㄴ *you need to adjust the code in connection.py to your server environment <br>
 
